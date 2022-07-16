@@ -31,7 +31,7 @@ class MyTestApplicationTests {
     void testInsert(){
         User testUser = new User();
         testUser.setEmail("likelike101101@gmail.com");
-        testUser.setName("Ke");
+        testUser.setName("keli");
         testUser.setPassword("123456");
         int result = userMapper.insert(testUser);
         System.out.println(result + " rows have been affected");

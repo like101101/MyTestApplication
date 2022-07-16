@@ -14,7 +14,10 @@ spring:
 
 
 
+
 mybatis:
   mapper-locations: classpath*:mapper/*Mapper.xml
   type-aliases-package: com.myself.mybatis.entity
 
+server:
+  port: 8081

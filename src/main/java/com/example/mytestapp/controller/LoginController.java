@@ -15,6 +15,10 @@ public class LoginController {
     @Autowired
     private UserMapper userMapper;
 
+    /**
+     * Function that check the user email and password
+     * returning the User instance from MySQL database
+     * **/
     @PostMapping("/userlogin")
     public User login(@RequestBody UserLogin userLogin) {
         String sha256pwd = DigestUtils.sha256Hex(userLogin.getPassword());

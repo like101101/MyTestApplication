@@ -12,6 +12,9 @@ public class StudentHandler {
     private RedisTemplate redisTemplate;
 
     @PostMapping("/set")
+    /**
+     * Accessing the redis server
+     * **/
     public void set(@RequestBody Student student){
         redisTemplate.opsForValue().set(student.getName(), student);
     }
